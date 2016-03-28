@@ -3,5 +3,5 @@ from django.db import models
 # Create your models here.
 class User(models.Model):
 	username = models.CharField(max_length=200)
-	# password = models.CharField(max_length=200)
-	# public_key = models.CharField(max_length=200)
+	password = models.CharField(max_length=200, default='none')
+	public_key = models.CharField(max_length=200, default='none')
